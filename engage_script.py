@@ -57,8 +57,9 @@ with open('engage_interview.tsv', 'rb') as f_in, gzip.open('engage_interview.tsv
     f_out.writelines(f_in)
 
 from datetime import datetime
-file_path = "{}_{}_{}.{}".format("photos",datetime.today().strftime('%Y_%m_%d'),str(uuid.uuid4()),".tsv.gz")
+file_path = "{}_{}_{}.{}".format("photos",datetime.today().strftime('%Y_%m_%d'),str(uuid.uuid4()),"tsv.gz")
 
 #calling S3 upload function.
 upload_to_aws('engage_interview.tsv.gz', AWS_STORAGE_BUCKET_NAME, file_path)
+print("file_path stored in S3:",file_path)
 print("Process of File upload to S3 has ended")
