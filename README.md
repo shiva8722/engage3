@@ -17,9 +17,14 @@
   -->python engage_script.py
 
 #To run test cases
-pytest
-coverage run -m pytest
-coverage report
-coverage html
+--> pytest
+--> coverage run -m pytest
 
-![alt text](https://q7u2n8d2.rocketcdn.me/wp-content/uploads/2020/03/Shiv-Puja.jpg)
+--> coverage report
+![alt text](https://raw.githubusercontent.com/shiva8722/engage3/main/Screen_shots/report.png)
+
+--> coverage html
+
+![script_test](https://raw.githubusercontent.com/shiva8722/engage3/main/Screen_shots/code_coverage_script_test.png)
+
+![script](https://raw.githubusercontent.com/shiva8722/engage3/main/Screen_shots/code_coverage_enage_script.png)
